@@ -25,7 +25,7 @@ export async function generateMetadata() {
       template: '%s | Next.js Template',
       default: 'Next.js Template',
     },
-    description: `${t('description')}`,
+    description: t('description'),
     generator: 'Next.js',
     applicationName: 'Next.js Template',
     keywords: [],
@@ -126,7 +126,7 @@ export async function generateMetadata() {
     },
     openGraph: {
       title: 'Next.js Template',
-      description: `${t('description')}`,
+      description: t('description'),
       url: 'https://example.com',
       siteName: 'Next.js Template',
       images: [
@@ -136,13 +136,13 @@ export async function generateMetadata() {
           height: 310,
         },
       ],
-      locale: `${getCurrentLocale()}`,
+      locale: getCurrentLocale(),
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Next.js Template',
-      description: `${t('description')}`,
+      description: t('description'),
       creator: '@aletsdelarosa',
       images: ['/images/banner.png'],
     },
